@@ -1,6 +1,7 @@
 {
-  "name": "quatromaos",
+  "name": "simplebuy",
   "version": "0.1.0",
+  "homepage": "https://evesassaki.github.io/simplebuy/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -29,6 +30,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start:frontend": "react-scripts start",
     "start:backend": "nodemon server.js",
     "start": "node server",
@@ -55,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.63.5"
   }
 }
